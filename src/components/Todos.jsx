@@ -12,9 +12,9 @@ const [text, setText] = useState("")
 		return store.todos
 	})
 
-	// useEffect(() => {
-	// 	getData();
-	// },[])
+	useEffect(() => {
+		getData();
+	},[])
 
 	const getData = () => {
 		axios.get("http://localhost:5000/todos")
@@ -32,7 +32,7 @@ const [text, setText] = useState("")
 			// console.log("Res", res)
 			dispatch(addTodo(res.data))
 		})
-		
+		setText("")
 	}
 
 	return (
@@ -43,7 +43,7 @@ const [text, setText] = useState("")
 			}}/>
 			<button onClick={() => {
 				postTodo()
-				getData();
+				// getData();
 				
 				// dispatch(addTodo(text))
 			}}>Add</button>
@@ -52,7 +52,7 @@ const [text, setText] = useState("")
 				return <div key={i}>
 					{/* <h1>{e.id}</h1> */}
 					<h1>{e.title}  {e.status}</h1>
-					<h1></h1>
+					
 				</div>	
 })}
 		</div>

@@ -1,81 +1,19 @@
 {
   "todos": [
     {
-      "title": "lays",
+      "title": "hill",
       "status": false,
       "id": 1
     },
     {
-      "title": "ice",
+      "title": "hills",
       "status": false,
       "id": 2
     },
     {
-      "title": "kurke",
+      "title": "hope",
       "status": false,
       "id": 3
-    },
-    {
-      "title": "kurkeew",
-      "status": false,
-      "id": 4
-    },
-    {
-      "title": "new",
-      "status": false,
-      "id": 5
-    },
-    {
-      "title": {
-        "value": "neww"
-      },
-      "status": false,
-      "id": 6
-    },
-    {
-      "title": "x",
-      "status": false,
-      "id": 7
-    },
-    {
-      "title": "XJYWGXQWX",
-      "status": false,
-      "id": 8
-    },
-    {
-      "title": "NEW",
-      "status": false,
-      "id": 9
-    },
-    {
-      "title": "jwjxw",
-      "status": false,
-      "id": 10
-    },
-    {
-      "title": "jwjxwhj",
-      "status": false,
-      "id": 11
-    },
-    {
-      "title": "hjbh",
-      "status": false,
-      "id": 12
-    },
-    {
-      "title": ";ljxX",
-      "status": false,
-      "id": 13
-    },
-    {
-      "title": "KIGU",
-      "status": false,
-      "id": 14
-    },
-    {
-      "title": "juice",
-      "status": false,
-      "id": 15
     }
   ]
 }
