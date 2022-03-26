@@ -20,8 +20,8 @@ const [text, setText] = useState("")
 		axios.get("http://localhost:5000/todos")
 		.then((res) => {
 			console.log("Data", res.data)
-			setText([...res.data])
-			// dispatch(addTodo(res.data))
+			// setText([...res.data])
+			dispatch(addTodo(res.data))
 			
 		})
 		
@@ -31,9 +31,10 @@ const [text, setText] = useState("")
 		axios.post("http://localhost:5000/todos", {title:text, status: "false"})
 		.then((res) => {
 			// console.log("Res", res)
-			dispatch(addTodo(res.data))
+			// dispatch(addTodo(res.data))
+			getData()
 		})
-		setText("")
+		// setText("")
 	}
 
 	return (
