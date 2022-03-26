@@ -37,6 +37,13 @@ const [text, setText] = useState("")
 		// setText("")
 	}
 
+	const handleDelete=(id) => {
+		console.log("Delete")
+		axios.delete(`http://localhost:5000/todos/${id}`).then(() => {
+			getData();
+		})
+	}
+
 	return (
 		<div>
 			<input onChange={(e)=> {
@@ -54,6 +61,7 @@ const [text, setText] = useState("")
 				return <div key={i}>
 					{/* <h1>{e.id}</h1> */}
 					<h1>{e.title}.  {e.status}</h1>
+					<button onClick={() => handleDelete(e.id)}>Delete</button>
 					
 				</div>	
 })}
